@@ -1,0 +1,236 @@
+body {
+  background-color: #f4f4f4;
+
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 18px;
+
+  line-height: 1.6em;
+}
+
+a { /*applies to every single anchor tag in the project*/
+    text-decoration: none;
+    color: #333;
+}
+
+a:hover{ /*color when hovered*/
+    color:orange;
+}
+
+a:active{ /*color when clicked*/
+    color:#00c921;
+}
+
+/*a:visited{       <--- color when visited already (disabled)
+    color:red
+} */
+
+.container {
+  width: 60%;
+  margin: auto;
+}
+
+.button:hover{
+    background-color: orange;
+    color: white;
+}
+
+.button:active{
+    color:#00c921;
+}
+
+.button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #333;
+    color: white;
+    padding: 3px 10px;
+    border: #333333;
+    border-width: 2px;
+}
+
+.clr{ /*CLEARS any floats above*/
+    clear:both;
+}
+
+.box-1 {
+    background-color: #333;
+    color: #f4f4f4;
+    
+    border: 7px orange solid;
+    padding: 20px;
+    
+    margin-top: 20px; /* adds 20px ontop which moves the whole box down*/
+}
+
+.box-1 h1{ /*styles any h1 that is in this class*/
+    color:#00c921
+}
+
+.box-2 {
+    border:3px dotted #ccc;
+    margin: 20px 0; /*20px top and bottom, 0px left and right*/
+    padding: 20px;
+}
+
+.categories {
+    border: 3px double rgb(112, 112, 112);
+    padding: 15px;
+    border-radius: 30px;
+    margin: 20px 0;
+}
+
+.categories h2 {
+    text-align: center;
+    margin-bottom: -15px;
+    margin-top: 15px
+}
+
+.categories ul {
+    padding:12px;
+    list-style: none;
+    /* padding:0; <--- there's like 40px of padding by default. set to 0 if necessary
+    list-style: square; <---makes bulleted list squares.
+    list-style: none; <--- removes bulleted icons completely */
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: dashed 2px;
+    margin: 8px;
+    list-style-image: url('./images/small\ check.png'); /*the checkmarks*/
+}
+
+.my-form {
+    padding:15px;
+}
+
+.my-form .form-group {
+    padding: 10px;
+}
+
+.my-form label{
+    display:block; /* makes the class a block element. puts everything in a new line; straightens it out.*/
+}
+
+.my-form input[name="text"], .my-form textarea{
+    padding: 6px;
+    width: 100%;
+}
+
+.block{
+    float:left;
+    width: 33.33333333%;
+    border:1px solid #ccc;
+    padding: 15px;
+    box-sizing: border-box; /*without box-sizing, the 1px border and 15px padding will push the boxes down due to the insufficient space*/
+}
+
+.main-block{
+    margin: 20px 0;
+}
+
+#main-block-heading{
+    float:left;
+    width:70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#main-block-sidebar{
+    float:right;
+    width:30%;
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 90%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: auto;
+    margin-bottom: 20px;
+    position: relative; /*sets the AREA of the div class*/
+}
+
+.p-box h1{
+    position: absolute; /*positions itself anywhere INSIDE the div class due to position:relative*/
+    top: 20px;
+    left: 20px
+}
+
+.p-box h2{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.p-box p{
+    position: absolute;
+    top: 200px;
+    right: 300px;
+}
+
+.links{
+    position: fixed;
+    top: 400px;
+}
+
+#youtube{
+
+    display: block;
+    margin-bottom: 8%;
+}
+
+#twitter{
+    display: block;
+    margin-bottom: 8%;
+}
+
+#spotify{
+    display: block;
+    margin-bottom: 8%;
+}
+
+.button#youtube {
+    background-color: #FF0000;
+    color: white;
+    padding: 3px 10px;
+    border: #333333;
+    border-width: 2px;
+    text-align: center;
+}
+
+.button#twitter {
+    background-color: #1DA1F2;
+    color: white;
+    padding: 3px 10px;
+    border: #333333;
+    border-width: 2px;
+    text-align: center;
+}
+
+.button#spotify {
+    background-color: #1DB954;
+    color: white;
+    padding: 3px 10px;
+    border: #333333;
+    border-width: 2px;
+    text-align: center;
+}
+
+.links p{
+    text-align: center; /*center of fixed position of .links*/
+    margin-bottom: 8%;
+    border: 1px solid #333;
+}
+
+small{
+    font-size: 10px;
+}
+
+.lets-talk h2{
+    margin-top: 70px;
+    margin-left: 494px;
+}
